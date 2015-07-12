@@ -1,0 +1,17 @@
+.profile {
+	width: 65%;
+	margin: 0 auto 4rem auto;
+}
+.profile.round {
+	border-radius: 100%;
+}
+.profile.small {
+	width: 6rem;
+	margin: 0 auto 4rem auto;
+}
+@media ( min-width : 600px ) {
+	.profile {
+		margin: 0;
+		width: 100%;
+	}
+}

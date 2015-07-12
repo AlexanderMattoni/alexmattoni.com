@@ -1,0 +1,62 @@
+/* **************************************************************************
+
+FORM ELEMENTS
+
+01. Form Widths
+02. Form Elements
+
+************************************************************************** */
+
+/* **************************************************************************
+
+01. Form Widths
+
+************************************************************************** */
+
+.frm-auto {width: auto;}
+.frm-5    {width: 5%;   max-width: 5%;   min-width: 5%}
+.frm-10   {width: 10%;  max-width: 10%;  min-width: 10%}
+.frm-15   {width: 15%;  max-width: 15%;  min-width: 15%}
+.frm-20   {width: 20%;  max-width: 20%;  min-width: 20%}
+.frm-25   {width: 25%;  max-width: 25%;  min-width: 25%}
+.frm-30   {width: 30%;  max-width: 30%;  min-width: 30%}
+.frm-35   {width: 35%;  max-width: 35%;  min-width: 35%}
+.frm-40   {width: 40%;  max-width: 40%;  min-width: 40%}
+.frm-45   {width: 45%;  max-width: 45%;  min-width: 45%}
+.frm-50   {width: 50%;  max-width: 50%;  min-width: 50%}
+.frm-55   {width: 55%;  max-width: 55%;  min-width: 55%}
+.frm-60   {width: 60%;  max-width: 60%;  min-width: 60%}
+.frm-65   {width: 65%;  max-width: 65%;  min-width: 65%}
+.frm-70   {width: 70%;  max-width: 70%;  min-width: 70%}
+.frm-75   {width: 75%;  max-width: 75%;  min-width: 75%}
+.frm-80   {width: 80%;  max-width: 80%;  min-width: 80%}
+.frm-85   {width: 85%;  max-width: 85%;  min-width: 85%}
+.frm-90   {width: 90%;  max-width: 90%;  min-width: 90%}
+.frm-95   {width: 95%;  max-width: 95%;  min-width: 95%}
+.frm-100  {width: 100%; max-width: 100%; min-width: 100%;}
+
+/* **************************************************************************
+
+02. Form Elements
+
+************************************************************************** */
+
+form {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+legend {
+
+}
+fieldset {
+	border: 0;
+	padding: 0;
+	margin: 0;
+}
+label {
+	display: block;
+}
+output {
+
+}

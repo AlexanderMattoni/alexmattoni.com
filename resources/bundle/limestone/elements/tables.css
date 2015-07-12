@@ -1,0 +1,110 @@
+/* **************************************************************************
+
+TABLES
+
+01. Table Widths
+
+************************************************************************** */
+
+/* **************************************************************************
+
+01. Table Widths
+
+************************************************************************** */
+
+table .tbl-5 {width: 5%}
+table .tbl-10 {width: 10%}
+table .tbl-15 {width: 15%}
+table .tbl-20 {width: 20%}
+table .tbl-25 {width: 25%}
+table .tbl-30 {width: 30%}
+table .tbl-35 {width: 35%}
+table .tbl-40 {width: 40%}
+table .tbl-45 {width: 45%}
+table .tbl-50 {width: 50%}
+table .tbl-55 {width: 55%}
+table .tbl-60 {width: 60%}
+table .tbl-65 {width: 65%}
+table .tbl-70 {width: 70%}
+table .tbl-75 {width: 75%}
+table .tbl-80 {width: 80%}
+table .tbl-85 {width: 85%}
+table .tbl-90 {width: 90%}
+table .tbl-95 {width: 95%}
+table .tbl-100 {width: 100%}
+
+/* **************************************************************************
+
+02. Table Defaults
+
+************************************************************************** */
+
+table {
+	border-collapse: separate;
+	table-layout: auto;
+    border-spacing: 0;
+    margin: 0 0 2rem 0;
+    width: 100%;
+    padding:0;
+}
+tr, th, td {
+	text-align: left;
+	vertical-align: top;
+}
+caption {
+	text-align: left;
+	caption-side: top;
+}
+
+/* **************************************************************************
+
+03. Helper Classes
+
+************************************************************************** */
+
+table.t-fixed {
+	table-layout: fixed;
+}
+
+table.t-auto {
+	table-layout: auto;
+}
+table .nowrap {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+table.align-middle td,
+table.align-middle th,
+table .align-middle,
+table tr.align-middle > td,
+table tr.align-middle > th {
+	vertical-align: middle;
+}
+table.align-top td,
+table.align-top th,
+table .align-top,
+table tr.align-top > td,
+table tr.align-top > th {
+	vertical-align: top;
+}
+
+/* **************************************************************************
+
+04. Hiding
+
+************************************************************************** */
+
+@media ( max-width : 600px ) {
+	.hide-cell-mobile {
+		visibility: collapse !important;
+		display: none !important;
+	}
+}
+@media ( min-width : 600px ) {
+	.hide-cell-desktop {
+		visibility: collapse !important;
+		display: none !important;
+	}
+}
+

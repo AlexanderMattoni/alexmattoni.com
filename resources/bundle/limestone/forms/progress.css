@@ -1,0 +1,139 @@
+/* **************************************************************************
+
+METER
+
+01. Progress Defaults
+02. Webkit
+03. Mozilla
+
+************************************************************************** */
+
+/* **************************************************************************
+
+01. Progress Defaults
+
+************************************************************************** */
+
+progress {
+	width: 100%;
+	display: block;
+	height: 1rem;
+	background: #dfdfdf;
+	overflow: hidden;
+	border: none;
+}
+progress::-webkit-progress-bar {
+	width: 100%;
+	display: block;
+	height: 1rem;
+	background: #dfdfdf;
+	overflow: hidden;
+}
+progress::-webkit-progress-value {
+	background-color: #aaa;
+	height: 1rem;
+}
+
+progress::-moz-progress-bar {
+	background-color: #aaa;
+	height: 1rem;
+}
+
+
+/* **************************************************************************
+
+02. Webkit
+
+************************************************************************** */
+
+/* Neutral/Disabled */
+
+progress.neutral::-webkit-progress-value,
+progress.disabled::-webkit-progress-value {
+	background: #aaa;
+}
+
+/* Success/Positive */
+
+progress.success::-webkit-progress-value,
+progress.positive::-webkit-progress-value {
+	background-color: #5cb85c;
+	animation: none;
+	-moz-animation: none;
+	-webkit-animation: none;
+}
+
+/* Info/Notice */
+
+progress.info::-webkit-progress-value,
+progress.notice::-webkit-progress-value {
+	background-color: #428bca;
+}
+
+/* Warning/Alert/Caution */
+
+progress.warning::-webkit-progress-value,
+progress.alert::-webkit-progress-value,
+progress.caution::-webkit-progress-value {
+	background-color: #f0ad4e;
+}
+
+/* Error/Negative/Danger */
+
+progress.error::-webkit-progress-value,
+progress.negative::-webkit-progress-value,
+progress.danger::-webkit-progress-value {
+	background-color: #cf302c;
+	animation: none;
+	-moz-animation: none;
+	-webkit-animation: none;
+}
+
+/* **************************************************************************
+
+02. Mozilla
+
+************************************************************************** */
+
+/* Neutral/Disabled */
+
+progress.neutral::-moz-progress-bar,
+progress.disabled::-moz-progress-bar {
+	background: #aaa;
+}
+
+/* Success/Positive */
+
+progress.success::-moz-progress-bar,
+progress.positive::-moz-progress-bar {
+	background-color: #5cb85c;
+	animation: none;
+	-moz-animation: none;
+	-webkit-animation: none;
+}
+
+/* Info/Notice */
+
+progress.info::-moz-progress-bar,
+progress.notice::-moz-progress-bar {
+	background-color: #428bca;
+}
+
+/* Warning/Alert/Caution */
+
+progress.warning::-moz-progress-bar,
+progress.alert::-moz-progress-bar,
+progress.caution::-moz-progress-bar {
+	background-color: #f0ad4e;
+}
+
+/* Error/Negative/Danger */
+
+progress.error::-moz-progress-bar,
+progress.negative::-moz-progress-bar,
+progress.danger::-moz-progress-bar {
+	background-color: #cf302c;
+	animation: none;
+	-moz-animation: none;
+	-webkit-animation: none;
+}

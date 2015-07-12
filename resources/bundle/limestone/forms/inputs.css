@@ -1,0 +1,503 @@
+/* **************************************************************************
+
+INPUTS
+
+01. Input Defaults
+02. Input Focus
+03. Input Read-Only
+04. Input Disabled
+05. Input State Success/Positive
+06. Input State Info/Notice
+07. Input State Warning/Alert/Caution
+08. Input State Error/Negative/Danger
+09. Radio Buttons & Checkboxes
+10. Form Buttons
+11. Range
+12. File
+
+************************************************************************** */
+
+/* **************************************************************************
+
+01. Input Defaults
+
+************************************************************************** */
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="url"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="week"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+select,
+textarea {
+	-webkit-appearance: none;
+	-webkit-border-radius: 0;
+	border: .1rem solid #d9d9d9;
+	display: block;
+	width: 100%;
+	color: inherit;
+	background-color: #fff;
+	padding: .4rem .8rem;
+	min-width: 0;
+	line-height: 1.5;
+	font-size: 1.4rem;
+	height: 3rem;
+	margin: 0;
+	vertical-align: top;
+	overflow: visible;
+	position: relative;
+	z-index: 5;
+	-webkit-transition: .15s ease-in-out;
+	-moz-transition:    .15s ease-in-out;
+	-o-transition:      .15s ease-in-out;
+	transition:         .15s ease-in-out;
+}
+
+/* Selects */
+
+select {
+	background-image: url('data:image/svg+xml;utf8,<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="15px" height="10px" viewBox="0 0 15 10" enable-background="new 0 0 15 10" xml:space="preserve"><polygon fill="#555555" points="0,4 3,0 6,4 "/><polygon fill="#555555" points="6,6 3,10 0,6 "/></svg>');
+	background-repeat: no-repeat;
+	background-position: 100% center;
+	cursor: pointer;
+}
+
+select[size], select[multiple] {
+	height: auto;
+	overflow: scroll;
+	padding: .5rem .8rem;
+	background: none;
+}
+select[size="1"] {
+	height: 3rem;
+}
+
+/* Disable default Webkit search chrome. */
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+	display: none;
+}
+
+/* Text Areas */
+
+textarea {
+	overflow: auto;
+	vertical-align: top;
+	resize: vertical;
+	min-height: 10rem;
+}
+
+/* **************************************************************************
+
+02. Input Focus
+
+************************************************************************** */
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+select:focus,
+textarea:focus {
+	outline: 0;
+	border-color: #aaa;
+	z-index: 10;
+	background-color: #f9f9f9;
+}
+
+/* Disable auto-zooming on certain mobile devices. */
+
+@media screen and ( max-width: 60rem ) {
+	input[type="text"],
+	input[type="password"],
+	input[type="email"],
+	input[type="url"],
+	input[type="date"],
+	input[type="month"],
+	input[type="time"],
+	input[type="datetime"],
+	input[type="datetime-local"],
+	input[type="week"],
+	input[type="number"],
+	input[type="search"],
+	input[type="tel"],
+	input[type="color"],
+	select,
+	textarea {
+		font-size: 16px;
+	}
+}
+
+/* **************************************************************************
+
+03. Input Read-Only
+
+************************************************************************** */
+
+input[type="text"][readonly],
+input[type="password"][readonly],
+input[type="email"][readonly],
+input[type="url"][readonly],
+input[type="date"][readonly],
+input[type="month"][readonly],
+input[type="time"][readonly],
+input[type="datetime"][readonly],
+input[type="datetime-local"][readonly],
+input[type="week"][readonly],
+input[type="number"][readonly],
+input[type="search"][readonly],
+input[type="tel"][readonly],
+input[type="color"][readonly],
+select[readonly],
+textarea[readonly] {
+	cursor: text;
+	background-color: #eee;
+	color: #888;
+	border-color: #ccc;
+}
+
+/* **************************************************************************
+
+04. Input Disabled
+
+************************************************************************** */
+
+input[type="text"][disabled],
+input[type="password"][disabled],
+input[type="email"][disabled],
+input[type="url"][disabled],
+input[type="date"][disabled],
+input[type="month"][disabled],
+input[type="time"][disabled],
+input[type="datetime"][disabled],
+input[type="datetime-local"][disabled],
+input[type="week"][disabled],
+input[type="number"][disabled],
+input[type="search"][disabled],
+input[type="tel"][disabled],
+input[type="color"][disabled],
+select[disabled],
+textarea[disabled],
+input[type="text"].disabled,
+input[type="password"].disabled,
+input[type="email"].disabled,
+input[type="url"].disabled,
+input[type="date"].disabled,
+input[type="month"].disabled,
+input[type="time"].disabled,
+input[type="datetime"].disabled,
+input[type="datetime-local"].disabled,
+input[type="week"].disabled,
+input[type="number"].disabled,
+input[type="search"].disabled,
+input[type="tel"].disabled,
+input[type="color"].disabled,
+select.disabled,
+textarea.disabled {
+	cursor: not-allowed;
+	background-color: #ccc;
+	color: #888;
+	border-color: #ccc;
+}
+
+/* **************************************************************************
+
+05. Input State Success/Positive
+
+************************************************************************** */
+
+input[type="text"].success,
+input[type="password"].success,
+input[type="email"].success,
+input[type="url"].success,
+input[type="date"].success,
+input[type="month"].success,
+input[type="time"].success,
+input[type="datetime"].success,
+input[type="datetime-local"].success,
+input[type="week"].success,
+input[type="number"].success,
+input[type="search"].success,
+input[type="tel"].success,
+input[type="color"].success,
+select.success,
+textarea.success,
+input[type="text"].positive,
+input[type="password"].positive,
+input[type="email"].positive,
+input[type="url"].positive,
+input[type="date"].positive,
+input[type="month"].positive,
+input[type="time"].positive,
+input[type="datetime"].positive,
+input[type="datetime-local"].positive,
+input[type="week"].positive,
+input[type="number"].positive,
+input[type="search"].positive,
+input[type="tel"].positive,
+input[type="color"].positive,
+select.positive,
+textarea.positive {
+	border-color: #5cb85c;
+}
+
+/* **************************************************************************
+
+06. Input State Info/Notice
+
+************************************************************************** */
+
+input[type="text"].info,
+input[type="password"].info,
+input[type="email"].info,
+input[type="url"].info,
+input[type="date"].info,
+input[type="month"].info,
+input[type="time"].info,
+input[type="datetime"].info,
+input[type="datetime-local"].info,
+input[type="week"].info,
+input[type="number"].info,
+input[type="search"].info,
+input[type="tel"].info,
+input[type="color"].info,
+select.info,
+textarea.info,
+input[type="text"].notice,
+input[type="password"].notice,
+input[type="email"].notice,
+input[type="url"].notice,
+input[type="date"].notice,
+input[type="month"].notice,
+input[type="time"].notice,
+input[type="datetime"].notice,
+input[type="datetime-local"].notice,
+input[type="week"].notice,
+input[type="number"].notice,
+input[type="search"].notice,
+input[type="tel"].notice,
+input[type="color"].notice,
+select.notice,
+textarea.notice {
+	border-color: #428bca;
+}
+
+/* **************************************************************************
+
+07. Input State Warning/Alert/Caution
+
+************************************************************************** */
+
+input[type="text"].warning,
+input[type="password"].warning,
+input[type="email"].warning,
+input[type="url"].warning,
+input[type="date"].warning,
+input[type="month"].warning,
+input[type="time"].warning,
+input[type="datetime"].warning,
+input[type="datetime-local"].warning,
+input[type="week"].warning,
+input[type="number"].warning,
+input[type="search"].warning,
+input[type="tel"].warning,
+input[type="color"].warning,
+select.warning,
+textarea.warning,
+input[type="text"].alert,
+input[type="password"].alert,
+input[type="email"].alert,
+input[type="url"].alert,
+input[type="date"].alert,
+input[type="month"].alert,
+input[type="time"].alert,
+input[type="datetime"].alert,
+input[type="datetime-local"].alert,
+input[type="week"].alert,
+input[type="number"].alert,
+input[type="search"].alert,
+input[type="tel"].alert,
+input[type="color"].alert,
+select.alert,
+textarea.alert,
+input[type="text"].caution,
+input[type="password"].caution,
+input[type="email"].caution,
+input[type="url"].caution,
+input[type="date"].caution,
+input[type="month"].caution,
+input[type="time"].caution,
+input[type="datetime"].caution,
+input[type="datetime-local"].caution,
+input[type="week"].caution,
+input[type="number"].caution,
+input[type="search"].caution,
+input[type="tel"].caution,
+input[type="color"].caution,
+select.caution,
+textarea.caution {
+	border-color: #f0ad4e;
+}
+
+/* **************************************************************************
+
+08. Input State Error/Negative/Danger
+
+************************************************************************** */
+
+input[type="text"].error,
+input[type="password"].error,
+input[type="email"].error,
+input[type="url"].error,
+input[type="date"].error,
+input[type="month"].error,
+input[type="time"].error,
+input[type="datetime"].error,
+input[type="datetime-local"].error,
+input[type="week"].error,
+input[type="number"].error,
+input[type="search"].error,
+input[type="tel"].error,
+input[type="color"].error,
+select.error,
+textarea.error,
+input[type="text"].negative,
+input[type="password"].negative,
+input[type="email"].negative,
+input[type="url"].negative,
+input[type="date"].negative,
+input[type="month"].negative,
+input[type="time"].negative,
+input[type="datetime"].negative,
+input[type="datetime-local"].negative,
+input[type="week"].negative,
+input[type="number"].negative,
+input[type="search"].negative,
+input[type="tel"].negative,
+input[type="color"].negative,
+select.negative,
+textarea.negative,
+input[type="text"].danger,
+input[type="password"].danger,
+input[type="email"].danger,
+input[type="url"].danger,
+input[type="date"].danger,
+input[type="month"].danger,
+input[type="time"].danger,
+input[type="datetime"].danger,
+input[type="datetime-local"].danger,
+input[type="week"].danger,
+input[type="number"].danger,
+input[type="search"].danger,
+input[type="tel"].danger,
+input[type="color"].danger,
+select.danger,
+textarea.danger {
+	border-color: #cf302c;
+}
+
+/* **************************************************************************
+
+09. Radio Buttons & Checkboxes
+
+************************************************************************** */
+
+input[type="checkbox"],
+input[type="radio"] {
+	box-sizing: border-box;
+	display: inline-block;
+	margin: 0 .4rem 0 0;
+	width: auto;
+	line-height: 1.5;
+	vertical-align: middle;
+	cursor: pointer;
+	overflow: visible;
+	position: relative;
+	top: -2px;
+}
+
+/* Disabled */
+
+input[type="checkbox"][disabled],
+input[type="radio"][disabled] {
+	cursor: not-allowed;
+}
+
+/* **************************************************************************
+
+10. Form Buttons
+
+************************************************************************** */
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	cursor: pointer;
+	-webkit-appearance: none;
+	white-space: normal;
+	width: auto;
+	margin: 0;
+	vertical-align: middle;
+	line-height: normal;
+	overflow: visible;
+}
+
+/* Disabled */
+
+button[disabled],
+input[type="button"][disabled],
+input[type="reset"][disabled],
+input[type="submit"][disabled] {
+	cursor: not-allowed;
+}
+
+/* Remove Mozilla's inner-focus styling */
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+	border: 0;
+	padding: 0
+}
+
+/* **************************************************************************
+
+11. Range
+
+************************************************************************** */
+
+input[type="range"] {
+
+}
+
+/* **************************************************************************
+
+12. File
+
+************************************************************************** */
+
+input[type="file"] {
+
+}

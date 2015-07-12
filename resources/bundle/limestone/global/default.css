@@ -1,0 +1,83 @@
+/* **************************************************************************
+
+DEFAULTS
+
+01. Box Model Reset
+02. Declarations
+03. Body/HTML Resets
+04. Selection Reset
+
+************************************************************************** */
+
+/* **************************************************************************
+
+01. Box Model Reset
+
+************************************************************************** */
+
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* **************************************************************************
+
+02. Declarations
+
+************************************************************************** */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+dialog,
+main,
+menu,
+nav,
+section,
+summary {
+	display: block
+}
+
+/* **************************************************************************
+
+03. Body/HTML Resets
+
+************************************************************************** */
+
+html {
+    min-height: 100%;
+    font-size: 100%;
+    overflow-y: scroll;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+	background: #fff;
+}
+body {
+    margin: 0;
+    min-height: 100%;
+	background: #fff;
+}
+
+/* **************************************************************************
+
+04. Selection Reset
+
+************************************************************************** */
+
+::-moz-selection {
+    background: #428bca;
+    color: #fff;
+    text-shadow: none;
+}
+::selection{
+    background: #428bca;
+    color: #fff;
+    text-shadow: none;
+}

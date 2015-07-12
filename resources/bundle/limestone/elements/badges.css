@@ -1,0 +1,42 @@
+/* **************************************************************************
+
+Badges
+
+01. Badge Defaults
+02. States
+
+************************************************************************** */
+
+/* **************************************************************************
+
+01. Badge Defaults
+
+************************************************************************** */
+
+.badge {
+	display: inline-block;
+	font-size: 1.1rem;
+	line-height: 1.6rem;
+	padding: 0 .4rem;
+	background: #aaa;
+	color: #fff;
+	border-radius: .3rem;
+	min-width: 1.8rem;
+	text-align: center;
+	font-style: normal;
+	font-weight: normal;
+	height: 1.6rem;
+	text-shadow: none;
+}
+
+/* **************************************************************************
+
+01. States
+
+************************************************************************** */
+
+.badge.danger,
+.badge.error,
+.badge.negative {
+	background: #cf302c;
+}

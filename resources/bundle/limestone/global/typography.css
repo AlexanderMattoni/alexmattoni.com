@@ -1,0 +1,256 @@
+/* **************************************************************************
+
+TYPOGRAPHY
+
+01. Typography Defaults
+02. Anchor Tags
+03. Block Level Elements
+04. Inline Elements
+05. Helper Classes
+06. Text States
+
+************************************************************************** */
+
+/* **************************************************************************
+
+01. Typography Defaults
+
+************************************************************************** */
+
+html {
+	font-size: 62.5%;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+	font-family: helvetica, arial, sans-serif;
+	line-height: 1.6;
+	color: #555;
+	font-size: 1.4rem;
+	-webkit-font-smoothing:antialiased;
+	font-smoothing:antialiased;
+	text-rendering:optimizeLegibility;
+}
+
+/* **************************************************************************
+
+02. Anchor Tags
+
+************************************************************************** */
+
+a {
+	text-decoration: none;
+	color:#0d84bf;
+	outline: 0;
+	cursor: pointer;
+	background: transparent;
+}
+a:hover {
+	text-decoration: underline;
+}
+a,
+a:hover,
+a:active,
+a:focus {
+	outline: 0;
+	box-shadow: none;
+}
+
+/* **************************************************************************
+
+03. Block Level Elements
+
+************************************************************************** */
+
+p {
+	margin: 0 0 2rem 0;
+	padding: 0;
+}
+address {
+	margin: 0 0 2rem 0;
+	padding: 0;
+	font-style: normal;
+}
+hr {
+	display: block;
+	margin: 4rem 0 4rem 0;
+	padding: 0;
+	border: none;
+	background: #d8d8d8;
+	height:.1rem;
+}
+
+/* **************************************************************************
+
+04. Inline Elements
+
+************************************************************************** */
+
+abbr,
+dfn {
+	font-style: normal;
+    border: none;
+}
+abbr[title],
+dfn[title] {
+	border-bottom: .1rem dotted #333;
+	cursor: help
+}
+ins,
+mark {
+	text-decoration: none;
+    padding: 0 .5rem 0 .5rem;
+}
+mark {
+	background: #c1dced;
+	color: inherit;
+}
+ins {
+	background: #cfe8c8;
+}
+del {
+	text-decoration: line-through;
+    color: #cf302c;
+}
+strong {
+	font-weight: bold;
+}
+em {
+	font-style: italic;
+}
+small {
+	font-size: 80%
+}
+sub,
+sup {
+	font-size: 80%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+sup {
+	top: -0.5rem;
+}
+sub {
+	bottom: -0.25rem;
+}
+
+/* **************************************************************************
+
+05. Helper Classes
+
+************************************************************************** */
+
+.txt-right {
+	text-align: right;
+}
+.txt-center {
+	text-align: center;
+}
+.txt-left {
+	text-align: left;
+}
+
+/* **************************************************************************
+
+06. Text States
+
+.muted, .disabled, .neutral {
+	color: #888
+}
+.success, .positive {
+	color: #388338;
+	color: #dff0d8;
+	color: #5cb85c;
+}
+.info, .notice {
+	color: #2e5a91;
+	color: #d9edf7;
+	color: #428bca;
+}
+.warning, .alert, .caution {
+	color: #8a6d3b;
+	color: #fbf4d9;
+	color: #f0ad4e;
+}
+.error, .negative, .danger {
+	color: #a94442;
+	color: #f2dede;
+	color: #cf302c;
+}
+
+************************************************************************** */
+
+/* Muted/Neutral */
+
+.txt-muted,
+.txt-neutral,
+a.txt-muted,
+a.txt-neutral {
+	color: #888;
+}
+a.txt-muted:hover,
+a.txt-neutral:hover {
+	color: #666;
+}
+
+/* Success/Positive */
+
+.txt-success,
+.txt-positive,
+a.txt-success,
+a.txt-positive {
+	color: #5cb85c;
+}
+a.txt-success:hover,
+a.txt-positive:hover {
+	color: #478d47;
+}
+
+/* Info/Notice */
+
+.txt-info,
+.txt-notice,
+a.txt-info,
+a.txt-notice {
+	color: #428bca;
+}
+a.txt-info:hover,
+a.txt-notice:hover {
+	color: #3570a3;
+}
+
+/* Warning/Alert/Caution */
+
+.txt-warning,
+.txt-alert,
+.txt-caution,
+a.txt-warning,
+a.txt-alert,
+a.txt-caution {
+	color: #f0ad4e;
+}
+a.txt-warning:hover,
+a.txt-alert:hover,
+a.txt-caution:hover {
+	color: #d19744;
+}
+
+/* Error/Negative/Danger */
+
+.txt-error,
+.txt-negative,
+.txt-danger,
+a.txt-error,
+a.txt-negative,
+a.txt-danger {
+	color: #cf302c;
+}
+a.txt-error:hover,
+a.txt-negative:hover,
+a.txt-danger:hover {
+	color:  #a92a26;
+}

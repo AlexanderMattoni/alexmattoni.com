@@ -1,0 +1,38 @@
+/**
+*
+* http://humanstxt.org
+*
+* An initiative to know the creators of the  website.
+*
+*/
+
+/**
+*
+* TEAM
+*
+*/
+
+Author: Alex Mattoni
+Twitter: @alexmattoni
+
+Company: Petrichor
+Company URI: http://petrichor.io
+Company Twitter: @petrichor.io
+
+/**
+*
+* THANKS
+*
+*/
+
+Dan Paquette: Design
+
+/**
+*
+* SITE
+*
+*/
+
+Last Update:
+Components: Limestone, Limestone Boilerplate
+Software: Illustrator, PHPStorm
