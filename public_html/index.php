@@ -276,12 +276,8 @@ if(isset($_POST['submit-message'])) {
 			Copyright &copy; 2015, Alex Mattoni
 		</footer>
 
-
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-
-		<script src="resources/js/scroll.js"></script>
-		<script src="resources/js/gradient.js"></script>
-		<script src="resources/js/stars.js"></script>
+        <script src="resources/js/mattoni.min.js"></script>
+        <script src="resources/js/stars.min.js"></script>
 
 	</body>
 
