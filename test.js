@@ -1,4 +1,3 @@
-
 var canvas = document.getElementById('canvas');
 //var llama = document.getElementById('llama');
 
