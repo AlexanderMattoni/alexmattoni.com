@@ -8,22 +8,22 @@ module.exports = function(grunt) {
         ts: {
             common: {
                 src: [
-                    'src/ts/Common/**/*.ts'
+                    'resources/ts/Common/**/*.ts'
                 ],
-                out: "src/js/mattoni.js",
-                reference: 'src/ts/Common/references.ts',
+                out: "resources/js/mattoni.js",
+                reference: 'resources/ts/Common/references.ts',
                 options: {
                     sourceMap: false,
                     declaration: false
                 }
             },
             stars: {
-                src: [
-                    'src/ts/Scenes/Stars/**/*.ts',
-                    'src/ts/Scenes/Shared/**/*.ts'
+                resources: [
+                    'resources/ts/Scenes/Stars/**/*.ts',
+                    'resources/ts/Scenes/Shared/**/*.ts'
                 ],
-                out: "src/js/stars.js",
-                reference: 'src/ts/Scenes/Stars/references.ts',
+                out: "resources/js/stars.js",
+                reference: 'resources/ts/Scenes/Stars/references.ts',
                 options: {
                     sourceMap: false,
                     declaration: false
@@ -39,7 +39,7 @@ module.exports = function(grunt) {
             common: {
                 files: [{
                     expand: true,
-                    cwd: "src/js/",
+                    cwd: "resources/js/",
                     src: '**/*.js',
                     dest: "public_html/resources/js/",
                     ext: '.min.js'

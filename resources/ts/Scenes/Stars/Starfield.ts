@@ -2,7 +2,7 @@ module Mattoni.Scenes.Stars {
 
     export class Starfield {
         scene:Scene;
-        objects:FieldObjectInterface[];
+        stars: Star[];
         settings: Settings;
 
         updateInterval: number;
@@ -14,10 +14,10 @@ module Mattoni.Scenes.Stars {
         }
 
         start() {
-            this.objects = [];
+            this.stars = [];
 
             for(var i = 0; i < this.settings.stars; i++) {
-                this.addObject(this.randomStar());
+                this.addStar(this.randomStar());
             }
 
 
@@ -27,20 +27,20 @@ module Mattoni.Scenes.Stars {
             }, 1000/this.settings.fps);
         }
 
-        addObject(object: FieldObjectInterface) {
-            this.objects.push(object);
+        addStar(object: FieldObjectInterface) {
+            this.stars.push(object);
         }
 
         update() {
             var dt = 1 / this.settings.fps;
 
-            for(var i=0; i<this.objects.length; i++) {
-                var object = this.objects[i];
+            for(var i=0; i<this.stars.length; i++) {
+                var object = this.stars[i];
                 object.y += dt * object.velocity;
                 //	Redraw object at top
                 if(object.y > this.scene.height) {
-                    this.objects[i] = this.randomStar();
-                    this.objects[i].y = 0;
+                    this.stars[i] = this.randomStar();
+                    this.stars[i].y = 0;
                 }
             }
         }
@@ -50,8 +50,8 @@ module Mattoni.Scenes.Stars {
             ctx.fillStyle = '#000000';
             ctx.fillRect(0, 0, this.scene.width, this.scene.height);
 
-            for(var i=0; i<this.objects.length;i++) {
-                this.objects[i].draw(ctx);
+            for(var i=0; i<this.stars.length;i++) {
+                this.stars[i].draw(ctx);
             }
         }
 
