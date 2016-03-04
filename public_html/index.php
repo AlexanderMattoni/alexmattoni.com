@@ -206,7 +206,7 @@ if(isset($_POST['submit-message'])) {
 						<p>
 							Ah, Japan. I couldn't wait to get out and explore the world. While at the University of Toledo, I studied abroad
 							in Nagoya at Aichi Daigaku for a year. I made great friends and had the time of my life. I've continued with my studies
-							and am constantly speaking Japanese with my girlfriend and friends.
+							and am constantly working to improve my language skills.
 						</p>
 					</div>
 				</div>
