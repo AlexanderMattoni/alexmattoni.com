@@ -1,20 +1,25 @@
-var WIDTH = window.innerWidth,
-    HEIGHT = window.innerHeight,
-    MAX_PARTICLES = 100,
-    DRAW_INTERVAL = 60,
-    container = document.querySelector("#container"),
-    canvas = document.querySelector("#pixie"),
-    context = canvas.getContext("2d"),
-    gradient = null,
-    pixies = new Array();
+const container = document.querySelector("div");
+const canvas = document.querySelector("canvas");
+let width = window.innerWidth;
+let height = window.innerHeight;
 
-function setDimensions(e) {
-    WIDTH = window.innerWidth;
-    HEIGHT = window.innerHeight;
-    container.style.width = WIDTH + "px";
-    container.style.height = HEIGHT + "px";
-    canvas.width = WIDTH;
-    canvas.height = HEIGHT;
+export function setDimensions() {
+    if (!canvas || !container) {
+        throw new Error("Elements not found");
+    }
+
+    width = window.innerWidth;
+    height = window.innerHeight;
+    container.style.width = width + "px";
+    container.style.height = height + "px";
+    canvas.width = width;
+    canvas.height = height;
 }
-setDimensions();
-window.addEventListener("resize", setDimensions);
+
+export function getDimensions() {
+    return {
+        width,
+        height,
+        canvas,
+    };
+}
