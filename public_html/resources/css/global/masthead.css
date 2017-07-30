@@ -1,9 +1,0 @@
-.masthead {
-	position: absolute;
-	top: 0;
-	width: 100%;
-	z-index: 200;
-}
-.masthead.fixed {
-	background: #8e1004;
-}

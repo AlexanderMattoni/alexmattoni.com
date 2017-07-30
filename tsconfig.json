@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es6",
+        "outDir": "dist",
+        "sourceMap": true,
+        "pretty": true,
+        "strict": true,
+        "removeComments": true,
+        "allowJs": false,
+        "noUnusedLocals": true,
+        "suppressImplicitAnyIndexErrors": true,
+        "experimentalDecorators": true,
+        "baseUrl": "./src",
+        "moduleResolution": "node",
+        "noEmitHelpers": true,
+        "importHelpers": true
+    },
+    "exclude": [
+        "node_modules",
+        "fuse.ts"
+    ]
+}
